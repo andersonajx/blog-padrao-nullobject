@@ -2,7 +2,7 @@ package br.com.andersonajx;
 
 public final class Pessoa {
 
-    private Veiculo veiculo;
+    private Veiculo veiculo = new VeiculoNull();
 
     public Pessoa() {
     }
@@ -12,9 +12,7 @@ public final class Pessoa {
     }
 
     public void utilizarVeiculo() {
-        if (veiculo != null) {
-            veiculo.mover();
-        }
+        veiculo.mover();
     }
 
 }
